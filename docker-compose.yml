@@ -1,0 +1,14 @@
+version: "3"
+services:
+  tf-udacity:
+    container_name: tf-udacity
+    build: ./tf-image
+    image: tf-udacity
+    # restart: always
+    ports:
+      - "8888:8888"
+      # - "6006:6006"
+    volumes:
+      - ./finding_donors:/notebooks
+      - ./config:/home/tf/config
+    command: bash /home/tf/config/config.sh
