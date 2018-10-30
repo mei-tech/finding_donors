@@ -1,9 +1,9 @@
 version: "3"
 services:
   tf-udacity:
-    container_name: tf-udacity-py2-finding_donors
+    container_name: tf-udacity-py3-finding_donors
     build: ./tf-image
-    image: tf-udacity-py2-finding_donors
+    image: tf-udacity-py3-finding_donors
     # restart: always
     ports:
       - "8888:8888"
