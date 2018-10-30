@@ -6,8 +6,8 @@ RUN apt-get update && \
       #   vim && \
       apt-get clean
 
-RUN pip3 install --upgrade pip
+RUN pip install --upgrade pip
 
-# RUN pip3 install -r /path/to/requirements.txt
+# RUN pip install -r /path/to/requirements.txt
 
 EXPOSE 8888
